@@ -22,6 +22,9 @@ module.exports = {
       backgroundImage: {
         header: "url(src/assets/images/cover.svg)",
       },
+      boxShadow: {
+        "profile-card": "0px 2px 28px rgba(0, 0, 0, 0.2)",
+      },
     },
     spacing: {
       px: "1px",

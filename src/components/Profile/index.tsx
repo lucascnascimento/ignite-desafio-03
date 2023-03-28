@@ -19,9 +19,9 @@ export const Profile = () => {
           pulvinar vel mass.
         </p>
         <div className="flex gap-24">
-          <IconLabel icon={"github"}>cameronwll</IconLabel>
-          <IconLabel icon={"github"}>Rockteseat</IconLabel>
-          <IconLabel icon={"github"}>32 seguidores</IconLabel>
+          <IconLabel icon={"gitHub"}>cameronwll</IconLabel>
+          <IconLabel icon={"building"}>Rockteseat</IconLabel>
+          <IconLabel icon={"userGroup"}>32 seguidores</IconLabel>
         </div>
       </div>
     </section>

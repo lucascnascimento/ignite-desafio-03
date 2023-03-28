@@ -12,13 +12,13 @@ type IconLabelProps = {
 const ICONS = {
   userGroup: faUserGroup,
   building: faBuilding,
-  gitHub: faGithub,
+  gitHub: faGithub as IconProp,
 };
 
 export const IconLabel = ({ icon = "userGroup", children }: IconLabelProps) => {
   return (
-    <div className="flex gap-8">
-      <FontAwesomeIcon icon={ICONS[icon]} color="white" />
+    <div className="flex gap-8 items-center">
+      <FontAwesomeIcon icon={ICONS[icon]} color="#3A536B" />
       <span>{children}</span>
     </div>
   );

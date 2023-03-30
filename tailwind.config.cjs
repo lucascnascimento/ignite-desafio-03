@@ -13,7 +13,7 @@ module.exports = {
       "base-post": "#112131",
       "base-profile": "#0B1B2B",
       "base-background": "#071422",
-      "base-input": "#071422",
+      "base-input": "#040F1A",
     },
     fontFamily: {
       sans: ["Nunito", "sans-serif"],
@@ -24,6 +24,7 @@ module.exports = {
       },
       boxShadow: {
         "profile-card": "0px 2px 28px rgba(0, 0, 0, 0.2)",
+        "input-focus": "0 0 0 2px #3294F8",
       },
     },
     spacing: {

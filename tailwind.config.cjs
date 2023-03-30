@@ -65,5 +65,5 @@ module.exports = {
       96: "6rem",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

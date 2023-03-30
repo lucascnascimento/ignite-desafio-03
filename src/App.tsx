@@ -1,3 +1,4 @@
+import { Card } from "./components/Card";
 import { Header } from "./components/Header";
 import { Profile } from "./components/Profile";
 
@@ -27,6 +28,12 @@ function App() {
             placeholder="Buscar conteúdo"
             className="mt-12 w-full bg-base-input py-12 px-16 border border-base-border rounded-md placeholder:text-base-label text-base-text focus:outline-none focus:shadow-input-focus"
           />
+        </div>
+        <div className="grid grid-cols-2 gap-32 my-48">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import { IconLabel } from "../IconLabel";
+import { LinkButton } from "../LinkButton";
 
 export const Profile = () => {
   return (
@@ -9,9 +10,13 @@ export const Profile = () => {
         className="w-[148px] h-[148px] rounded-lg"
       />
       <div className="flex flex-col">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <h1>Lucas Cordeiro</h1>
-          <a>GITHUB</a>
+          <LinkButton
+            label="github"
+            to="https://www.google.com/"
+            isExternalLink
+          />
         </div>
         <p className="mt-8">
           Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu

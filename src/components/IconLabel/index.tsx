@@ -1,18 +1,10 @@
 import { ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faBuilding, faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Icon, ICONS } from "../../utils/constants";
 
 type IconLabelProps = {
-  icon: "userGroup" | "building" | "gitHub";
+  icon: Icon;
   children: ReactNode;
-};
-
-const ICONS = {
-  userGroup: faUserGroup,
-  building: faBuilding,
-  gitHub: faGithub as IconProp,
 };
 
 export const IconLabel = ({ icon = "userGroup", children }: IconLabelProps) => {

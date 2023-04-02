@@ -3,7 +3,7 @@ import { LinkButton } from "../LinkButton";
 
 export const Profile = () => {
   return (
-    <section className="flex py-32 px-40 gap-32 bg-base-profile rounded-[10px] shadow-profile-card">
+    <section className="headerCard gap-32">
       <img
         src="https://avatars.githubusercontent.com/u/43356441?v=4"
         alt=""

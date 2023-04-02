@@ -20,7 +20,7 @@ export const ICONS = {
   gitHub: faGithub as IconProp,
   arrowUpRightFromSquare: faArrowUpRightFromSquare,
   chevronLeft: faChevronLeft,
-  calendarDar: faCalendarDay,
+  calendarDay: faCalendarDay,
   comment: faComment,
 };
 

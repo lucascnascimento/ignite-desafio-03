@@ -20,7 +20,7 @@ export const LinkButton = ({
   return (
     <Link
       to={to}
-      className="flex gap-8 text-blue text-xs uppercase font-bold"
+      className="flex gap-8 text-blue text-xs uppercase font-bold items-center"
       target={isExternalLink ? "_blank" : "_self"}
     >
       {iconPosition === "left" ? <FontAwesomeIcon icon={ICONS[icon]} /> : null}

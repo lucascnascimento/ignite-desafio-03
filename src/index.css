@@ -22,3 +22,9 @@
     font-size: 1.5rem;
   }
 }
+
+@layer components {
+  .headerCard {
+    @apply flex py-32 px-40 bg-base-profile rounded-[10px] shadow-profile-card;
+  }
+}

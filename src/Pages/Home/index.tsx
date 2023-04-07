@@ -1,10 +1,14 @@
 import { Card } from "../../components/Card";
 import { Profile } from "../../components/Profile";
+import { ProfileSkeleton } from "../../components/Skeletons/ProfileSkeleton";
+import { useFetchUser } from "../../hooks/useFetchUser";
 
 export const Home = () => {
+  const { data, isLoading } = useFetchUser("lucascnascimento");
+
   return (
     <>
-      <Profile />
+      {isLoading || !data ? <ProfileSkeleton /> : <Profile user={data} />}
       <div className="mt-72">
         <div className="flex justify-between">
           <label

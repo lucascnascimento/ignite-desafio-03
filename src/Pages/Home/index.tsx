@@ -4,7 +4,7 @@ import { ProfileSkeleton } from "../../components/Skeletons/ProfileSkeleton";
 import { useFetchUser } from "../../hooks/useFetchUser";
 
 export const Home = () => {
-  const { data, isLoading } = useFetchUser("lucascnascimento");
+  const { data, isLoading } = useFetchUser(import.meta.env.VITE_USERNAME);
 
   return (
     <>

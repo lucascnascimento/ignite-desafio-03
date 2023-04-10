@@ -2,9 +2,11 @@ import { Card } from "../../components/Card";
 import { Profile } from "../../components/Profile";
 import { ProfileSkeleton } from "../../components/Skeletons/ProfileSkeleton";
 import { useFetchUser } from "../../hooks/useFetchUser";
+import { useSearchIssues } from "../../hooks/useSearchIssues";
 
 export const Home = () => {
   const { data, isLoading } = useFetchUser(import.meta.env.VITE_USERNAME);
+  useSearchIssues("");
 
   return (
     <>

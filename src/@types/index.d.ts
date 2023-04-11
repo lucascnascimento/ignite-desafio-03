@@ -8,3 +8,14 @@ export type User = {
   login: string;
   bio;
 };
+
+export type CardInfo = {
+  id: number;
+  body: string;
+  title: string;
+  updated_at: string;
+};
+
+export type IssuesResponse = {
+  items: CardInfo[];
+};

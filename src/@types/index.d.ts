@@ -10,12 +10,12 @@ export type User = {
 };
 
 export type CardInfo = {
-  id: number;
+  number: number;
   body: string;
   title: string;
   updated_at: string;
 };
 
-export type IssuesResponse = {
+export type SearchResponse = {
   items: CardInfo[];
 };

@@ -9,10 +9,10 @@ type CardProps = {
 };
 
 export const Card = ({ cardInfo }: CardProps) => {
-  const { body, title, updated_at, id } = cardInfo;
+  const { body, title, updated_at, number } = cardInfo;
 
   return (
-    <Link to={ROUTES.post}>
+    <Link to={`${ROUTES.post}/${number}`} state={{ number }}>
       <article className="bg-base-post rounded-[10px] p-32 h-[260px] hover:outline-2 hover:outline hover:outline-base-label">
         <div className="flex justify-between">
           <h1 className="text-xl">{title}</h1>

@@ -19,3 +19,14 @@ export type CardInfo = {
 export type SearchResponse = {
   items: CardInfo[];
 };
+
+export type IssueResponse = {
+  body: string;
+  comments: number;
+  updated_at: string;
+  user: {
+    login: string;
+  };
+  title: string;
+  html_url: string;
+};

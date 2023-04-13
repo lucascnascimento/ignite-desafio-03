@@ -1,4 +1,5 @@
 import { User } from "../../@types";
+import { Followers } from "../Followers";
 import { IconLabel } from "../IconLabel";
 import { LinkButton } from "../LinkButton";
 
@@ -8,20 +9,6 @@ type ProfileProps = {
 
 export const Profile = ({ user }: ProfileProps) => {
   const { avatar_url, company, followers, login, name, html_url, bio } = user;
-
-  const renderFollowers = () => {
-    if (!followers) return null;
-
-    let followersText = "";
-
-    if (followers === 1) {
-      followersText = `${followers} seguidor`;
-    } else {
-      followersText = `${followers} seguidores`;
-    }
-
-    return <IconLabel icon={"userGroup"}>{followersText}</IconLabel>;
-  };
 
   return (
     <section className="headerCard gap-32">
@@ -35,7 +22,7 @@ export const Profile = ({ user }: ProfileProps) => {
         <div className="flex gap-24 mt-auto">
           {login && <IconLabel icon={"gitHub"}>{login}</IconLabel>}
           {company && <IconLabel icon={"building"}>{company}</IconLabel>}
-          {renderFollowers()}
+          <Followers followers={followers} />
         </div>
       </div>
     </section>

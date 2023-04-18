@@ -18,6 +18,7 @@ export type CardInfo = {
 
 export type SearchResponse = {
   items: CardInfo[];
+  total_count: number;
 };
 
 export type IssueResponse = {

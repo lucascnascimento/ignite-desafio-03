@@ -23,6 +23,14 @@ export const Home = () => {
     debounceInput(value);
   };
 
+  const getNumberOfPublications = () => {
+    if (issues?.total_count === 1) {
+      return "1 publicação";
+    }
+
+    return `${issues?.total_count} publicações`;
+  };
+
   return (
     <>
       {isLoadingUser || !user ? <ProfileSkeleton /> : <Profile user={user} />}
@@ -34,7 +42,9 @@ export const Home = () => {
           >
             Publicações
           </label>
-          <span className="text-sm text-base-span">6 publicações</span>
+          <span className="text-sm text-base-span">
+            {getNumberOfPublications()}
+          </span>
         </div>
         <input
           id="searchInput"
@@ -48,7 +58,7 @@ export const Home = () => {
         {isLoadingIssues || !issues?.items ? (
           <div>...Loading</div>
         ) : (
-          issues.items.map((item) => <Card cardInfo={item} key={item.id} />)
+          issues.items.map((item) => <Card cardInfo={item} key={item.number} />)
         )}
       </div>
     </>
